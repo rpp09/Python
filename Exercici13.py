@@ -5,7 +5,12 @@ D= A * B
 E= A / B
 F= A - B
 G= A % B
+H= A // B
+I= A ** B
 print("La suma de {} + {} és igual a {}".format(A, B, C))
 print("La multiplicació de {} * {} és igual a {}".format(A, B, D))
 print("La divisió de {} i {} és igual a {}".format(A, B, E))
 print("La resta de {} i {} és igual a {}".format(A, B, F))
+print("El reste de {} i {} és {}".format(A, B, G))
+print("El coecient de {} i {} és {}".format(A, B, H))
+print("La potencia de {} ** {} és {}".format(A, B, I))
