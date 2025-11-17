@@ -1,16 +1,102 @@
-A= float(input("Insereix el primer nombre"))
-B= float(input("Insereix el segon nombre"))
-C= A + B
-D= A * B
-E= A / B
-F= A - B
-G= A % B
-H= A // B
-I= A ** B
-print("La suma de {} + {} és igual a {}".format(A, B, C))
-print("La multiplicació de {} * {} és igual a {}".format(A, B, D))
-print("La divisió de {} i {} és igual a {}".format(A, B, E))
-print("La resta de {} i {} és igual a {}".format(A, B, F))
-print("El reste de {} i {} és {}".format(A, B, G))
-print("El coecient de {} i {} és {}".format(A, B, H))
-print("La potencia de {} ** {} és {}".format(A, B, I))
+def menu_principal():
+      opcio=0
+      while opcio<1 or opcio>3:
+            opcio = int(input(""" Eligeix una opció:
+                              1. Calculadora decimal
+                              2. calculadora real (floats)
+                              3. Sortir \n"""))
+            if opcio>0 and opcio<4:
+                  return opcio
+            else:
+                  print("l'opcio seleccionada no es correcte, torni-ho a pprovar! \n")
+
+
+def menu_calculadora():
+    opcio=0
+    while opcio<1 or opcio>5:
+         opcio=int(input("""Escriu una opció:
+                    1.Suma
+                    2.Resta
+                    3.Multiplicació
+                    4.Divisió
+                    0.Sortir
+                    """))
+         if opcio>0 and opcio<6:
+               return opcio
+         else:
+               print("l'opcio seleccionada no es correcta, torna-ho a provar!! \n")
+
+def calculadora_decimal(opcio):
+        if opcio>0 and opcio<5:
+              a = int(input("introdueix el primer nombre: "))
+              b = int(input("introdueix el segon nombre: "))
+        match(opcio):
+              case 1:
+                    #Suma
+                    print("Estic fent la suma! \n")
+                    c= a + b
+                    print("El resultat de la operació {} + {} és {}".format(a, b, c))
+              case 2:
+                    #Resta
+                    print("Estic fent la Resta! \n")
+                    c= a - b
+                    print("El resultat de la operació {} - {} és {}".format(a, b, c))
+              case 3:
+                    #Multiplicació
+                    print("Estic fent la multiplicació \n")
+                    c= a * b
+                    print("El resultat de la operació {} * {} és {}".format(a, b, c))
+              case 4:
+                    #Divisió
+                    print("Estic fent la divisió! \n")
+                    c= a / b
+                    print("El resultat de la operació {} / {} és {}".format(a, b, c))
+              case _:
+                    print("Gracies, fins aviat!")
+
+def calculadora_real(opcio):
+        if opcio>0 and opcio<5:
+              a = float(input("introdueix el primer nombre: "))
+              b = float(input("introdueix el segon nombre: "))
+        match(opcio):
+              case 1:
+                    #Suma
+                    print("Estic fent la suma! \n")
+                    c= a + b
+                    print("El resultat de la operació {} + {} és {}".format(a, b, c))
+              case 2:
+                    #Resta
+                    print("Estic fent la Resta! \n")
+                    c= a - b
+                    print("El resultat de la operació {} - {} és {}".format(a, b, c))
+              case 3:
+                    #Multiplicació
+                    print("Estic fent la multiplicació \n")
+                    c= a * b
+                    print("El resultat de la operació {} * {} és {}".format(a, b, c))
+              case 4:
+                    #Divisió
+                    print("Estic fent la divisió! \n")
+                    c= a / b
+                    print("El resultat de la operació {} / {} és {}".format(a, b, c))
+              case _:
+                    print("Gracies, fins aviat!")
+
+   
+ #Programa principal
+
+op=1
+while op!=0:
+        op = menu_principal()
+        if op==1:
+              #Calculadora decimal
+              print("Estic passant per la calculadora decimal! \n")
+              calculadora_decimal(menu_calculadora())
+        elif op==2:
+              #Calculadora real
+              print("Estic passant per la calculadora real! \n")
+              calculadora_real(menu_calculadora())
+        else:
+            print("Gracies per utilitzar la meva calculadora, fins un altre dia!")
+            op=0
+            
