@@ -49,8 +49,8 @@ def calculadora_decimal(opcio):
               case 4:
                     #Divisió
                     print("Estic fent la divisió! \n")
-                    c= a / b
-                    print("El resultat de la operació {} / {} és {}".format(a, b, c))
+                    c= a // b
+                    print("El resultat de la operació {} // {} és {}".format(a, b, c))
               case _:
                     print("Gracies, fins aviat!")
 
