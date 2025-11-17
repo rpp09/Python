@@ -5,4 +5,6 @@ if Edat>18:
 elif Edat<18:
     print("Ets menor d'edat")
 else:
-    print("acabes de cumplir la majoria d'edat")    
+    print("acabes de cumplir la majoria d'edat")     
+
+    
