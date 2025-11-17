@@ -81,8 +81,7 @@ def calculadora_real(opcio):
                     print("El resultat de la operació {} / {} és {}".format(a, b, c))
               case _:
                     print("Gracies, fins aviat!")
-
-   
+ 
  #Programa principal
 
 op=1
@@ -98,5 +97,4 @@ while op!=0:
               calculadora_real(menu_calculadora())
         else:
             print("Gracies per utilitzar la meva calculadora, fins un altre dia!")
-            op=0
-            
+            op=0            
