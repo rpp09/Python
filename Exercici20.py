@@ -20,3 +20,4 @@ print("Prova 5: es_palindrom('Python') =", es_palindrom('Python'))# False
 print("Prova 6: es_palindrom('Simis') =", es_palindrom('Simis'))  # True
 print("Prova 7: es_palindrom('refer') =", es_palindrom('refer'))  # True
 print("Prova 8: es_palindrom('hola') =", es_palindrom('hola'))    # False
+
